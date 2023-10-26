@@ -118,6 +118,9 @@
             </math>
         </template>
 
+        <p>Simple Rectangle using canvas with js</p>
+        <canvas id="myCanvas">A rectangle</canvas>
+
         <p>The famous formula by <b><i>Einstein</i></b> is:</p>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mrow>
@@ -138,6 +141,12 @@
 		<hr>
 		<aside><p>This page was made with by <em>Honghao Lin</em></p></aside>
 	</footer>
-</body>
 
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+</body>
 </html>
