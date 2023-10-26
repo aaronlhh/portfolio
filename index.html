@@ -19,6 +19,9 @@
                 <li><a href="/experiences.html">Experiences</a></li>
                 <li>
                     <div class="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        </svg>
                         <a class="project-link" href="/projects.html">Projects</a>
                         <nav class="subproject-links">
                             <a href="project1.html">Project 1</a>
@@ -56,11 +59,72 @@
 			<h2>Honghao Lin</h2>
             <p>Personal Bio ...</p>
 		</section>
+
+        <br>
+        <details>
+            <summary>Contact Form</summary>
+            <form>
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label>What is your purpose?:</label>
+                    <input type="radio" id="Recruit" name="purpose" />
+                    <label for="Recruit">Recruit</label>
+                    <input type="radio" id="connect" name="purpose" />
+                    <label for="connect">Connect</label>
+                    <br>
+                    <label for="country">Select your country:</label>
+                    <select id="country">
+                        <optgroup label="North America">
+                            <option value="canada">Canada</option>
+                            <option value="us">US</option>
+                            <option value="mexico">Mexico</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="russia">Russia</option>
+                            <option value="china">China</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="continent">Select your continent:</label>
+                    <datalist id="continents">
+                        <option value="Africa"></option>
+                        <option value="North America"></option>
+                        <option value="South America"></option>
+                    </datalist>
+                    <input list="continents" id="continent" />
+                    <br>
+                    <label for="sample-text-area">Add any comments:</label>
+                    <textarea id="sample-text-area">Your comment here...</textarea>
+                    <br>
+                    <button type="submit">Save</button>
+                </fieldset>
+            </form>
+        </details>
+        
+        
+
+        <p>The famous formula by <b><i>Einstein</i></b> is:</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+                <msup>
+                    <mi>E</mi>
+                </msup>
+                <mo>=</mo>
+                <msup>
+                    <mi>m</mi>
+                </msup>
+                <mo>&#8290;</mo>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+            </mrow>
+        </math>
 	</main>
 
 	<footer>
 		<hr>
-		<aside><p>This page was made with by Honghao Lin</p></aside>
+		<aside><p>This page was made with by <em>Honghao Lin</em></p></aside>
 	</footer>
 </body>
 
