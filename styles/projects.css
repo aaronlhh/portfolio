@@ -1,0 +1,36 @@
+@import url("main.css");
+
+
+main div {
+    background-color: rgba(0, 0, 0, 0.046);
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1000px;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table th {
+    font-size: 2em;
+}
+
+table td {
+    text-align: center;
+    padding: 30px;
+}
+
+table a {
+    border: 1px solid black;
+    padding: 10px 25%;
+    color: black;
+    font-size: 1.2em;
+    background-color: white;
+}

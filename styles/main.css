@@ -10,6 +10,10 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
 }
@@ -22,10 +26,6 @@
     width: var(--navigation-width, 250px);
     border-right: 1px solid black;
     background-color: rgba(0, 0, 0, 0.046);
-}
-
-.navigation a {
-    text-decoration: none;
 }
 
 .navigation > a > span{
