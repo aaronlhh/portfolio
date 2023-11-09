@@ -15,19 +15,27 @@
             <nav class="navigation">
                 <a href="/"><span>Honghao Lin - Computer Science</span></a>
                 <ul>
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/resume.html">Resume</a></li>
-                    <li><a href="/experiences.html">Experiences</a></li>
-                    <li>
-                        <div class="projects">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    <li class="link"><a href="/">About Me</a></li>
+                    <li class="link"><a href="/resume.html">Resume</a></li>
+                    <li class="link"><a href="/experiences.html">Experiences</a></li>
+                    <li class="repo-link">
+                        <div class="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                             </svg>
-                            <a class="project-link" href="/projects.html">Projects</a>
-                            <nav class="subproject-links shrink">
-                                <a href="project1.html">Project 1</a>
-                                <a href="project2.html">Project 2</a>
-                                <a href="project3.html">Project 3</a>
+                            <a class="visiting" href="/projects.html">Projects</a>
+                            <nav class="hidden">
+                                <ul>
+                                    <li>
+                                        <a href="project1.html">Project 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="project2.html">Project 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="project3.html">Project 3</a>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                     </li>
@@ -41,35 +49,27 @@
             <main>
                 <div>
                     <table>
-                        <!-- <colgroup>
-                            <col span="1" style="background-color:red"> <col style="background-color:yellow">
-                        </colgroup> -->
-                        <tr>
-                            <th>My Recent Projects</th>
-                            <th>My Previous Projects</th>
-                        </tr>
-                        <tr>
-                            <td><a href="project1.html">Project 1</a></td>
-                            <td><a href="project2.html">Project 2</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="project3.html">Project 3</a></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                        <tbody>
+                            <tr>
+                                <th>My Recent Projects</th>
+                            </tr>
+                            <tr>
+                                <td><a href="project1.html">Project 1 Name</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="project3.html">Project 3 Name</a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>My Previous Projects</th>
+                            </tr>
+                            <tr>
+                                <td><a href="project2.html">Project 2 Name</a></td>
+                            </tr>
+                        </tbody>
+                      </table>
                 </div>
-                <!-- <div class="project-group">
-                    <span><strong>Recent Projects</strong></span>
-                    <br>
-                    <a href="project1.html">Project 1</a>
-                </div>
-                <div class="project-group">
-                    <span><strong>Previous Projects</strong></span>
-                    <br>
-                    <a href="project2.html">Project 2</a>
-                    <br>
-                    <a href="project3.html">Project 3</a>
-                </div> -->
             </main>
             <footer>
                 <hr>

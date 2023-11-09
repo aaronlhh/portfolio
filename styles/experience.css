@@ -27,9 +27,44 @@ main div {
     margin-bottom: 30px;
     padding-top: 20px;
     border: 1px solid transparent;
+    animation-name: experience-background;
+    animation-duration: 3s;
     background-color: rgba(0, 0, 0, 0.046);
+}
+
+@keyframes experience-background {
+    from {background-color: orange;}
+    to {background-color: rgba(0, 0, 0, 0.046);}
 }
 
 main div pre {
     padding-left: var(--block-side-padding, 20px);
+}
+
+
+@media screen and (max-width: 980px){
+    :root {
+        --main-width-experience: 900px;
+        --block-side-padding: 20px;
+    }
+
+    pre {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 880px){
+    :root {
+        --main-width-experience: 900px;
+        --block-side-padding: 0px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    pre {
+        text-align: center;
+    }
 }

@@ -33,4 +33,42 @@ table a {
     color: black;
     font-size: 1.2em;
     background-color: white;
+    transition: color 0.3s ease;
+    &:hover {
+        background-color: color-mix(in lch, red, yellow);
+    }
 }
+
+
+
+@media screen and (max-width: 600px) {
+    table a {
+        border: 1px solid black;
+        padding: 10px 10%;
+        color: black;
+        font-size: 1.2em;
+        background-color: white;
+        transition: color 0.3s ease;
+        &:hover {
+            background-color: color-mix(in lch, red, yellow);
+        }
+    }
+
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    th {
+      font-weight: bold;
+    }
+  
+    td {
+      padding: 5px 0;
+    }
+  
+    tr {
+      margin-bottom: 10px; 
+    }
+}
+
+

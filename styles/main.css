@@ -18,13 +18,13 @@ a {
     display: flex;
 }
 
-/* navigation sidebar */
 
+/* navigation sidebar */
 .navigation {
     height: 100%;
     position: fixed;
     width: var(--navigation-width, 250px);
-    border-right: 1px solid black;
+    border-right: 1px solid transparent;
     background-color: rgba(0, 0, 0, 0.046);
 }
 
@@ -39,20 +39,33 @@ a {
     color: orange;
 }
 
-.shrink {
+.hidden {
     display: none;
 }
 
-.navigation ul a {
-    color: black;
-    font-size: 16pt;
+.navigation ul .link{
+    list-style-type: none;
     margin-left: 42px;
     margin-right: 12px;
     margin-bottom: 20px;
     padding-right: 6px;
     padding-left: 6px;
+}
+
+.navigation ul .repo-link {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.navigation ul a {
+    color: black;
+    font-size: 16pt;
     display: inline-block;
-    max-width: 90%;
+    max-width: 100%;
     cursor: pointer;
     transition: color 0.3s ease;
     &:hover {
@@ -64,6 +77,16 @@ a {
     background-color: black;
     color: white;
 }
+
+.dropdown svg {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    stroke:black;
+    &:hover{
+        transform: rotate(90deg);
+    }
+}
+
 
 /* content */
 
@@ -106,4 +129,185 @@ main {
 /* footer css */
 footer {
     padding: 0 50px;
+}
+
+
+/* media for different media types */
+@media screen and (max-width: 1300px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 100%;
+        position: fixed;
+        height: 80px;
+        background-color: rgb(230, 226, 226);
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
+    .navigation > a > span{
+        font-family: var(--title-font-family, "Oswald");
+        font-size: 18pt;
+        margin: 0;
+        color: black;
+        padding-left: 100px;
+        max-width: 200px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navigation ul .link{
+        list-style-type: none;
+        padding: 0 20px;
+        margin: 0;
+    }
+    
+    .navigation ul .repo-link {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px;
+    }
+    
+    .navigation ul a {
+        color: black;
+        font-size: 14pt;
+        display: inline-block;
+        max-width: 100%;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    .navigation ul a.visiting {
+        background-color: black;
+        color: white;
+    }
+    
+    .dropdown svg {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        stroke:black;
+        &:hover{
+            transform: rotate(90deg);
+        }
+    }
+
+    .content{
+        height: 100%;
+        width: 100%;
+        overflow-y: auto; /* Makes the content scrollable */
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .content .title h1{
+        font-size: 3em;
+    }
+}
+
+
+
+@media screen and (max-width: 880px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 100%;
+        position: fixed;
+        height: 80px;
+        background-color: rgb(230, 226, 226);
+        margin-bottom: 50px;
+    }
+    
+
+    .navigation > a{
+        display: none;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navigation ul .link{
+        list-style-type: none;
+        padding: 0 20px;
+        margin: 0;
+    }
+    
+    .navigation ul .repo-link {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px;
+    }
+    
+    .navigation ul a {
+        color: black;
+        font-size: 14pt;
+        display: inline-block;
+        max-width: 100%;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    .navigation ul a.visiting {
+        background-color: black;
+        color: white;
+    }
+    
+    .dropdown svg {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        stroke:black;
+        &:hover{
+            transform: rotate(90deg);
+        }
+    }
+
+    .content{
+        height: 100%;
+        width: 100%;
+        overflow-y: auto; /* Makes the content scrollable */
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    div.title h1{
+        text-transform: uppercase;
+        font-family: var(--title-font-family, "Oswald");
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: 600;
+        text-align: center;
+    }
+
 }

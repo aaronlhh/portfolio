@@ -18,19 +18,27 @@
             <nav class="navigation">
                 <a href="/"><span>Honghao Lin - Computer Science</span></a>
                 <ul>
-                    <li><a class="visiting" href="/">About Me</a></li>
-                    <li><a href="/resume.html">Resume</a></li>
-                    <li><a href="/experiences.html">Experiences</a></li>
-                    <li>
-                        <div class="projects">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    <li class="link"><a class="visiting" href="/">About Me</a></li>
+                    <li class="link"><a href="/resume.html">Resume</a></li>
+                    <li class="link"><a href="/experiences.html">Experiences</a></li>
+                    <li class="repo-link">
+                        <div class="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                             </svg>
-                            <a class="project-link" href="/projects.html">Projects</a>
-                            <nav class="subproject-links shrink">
-                                <a href="project1.html">Project 1</a>
-                                <a href="project2.html">Project 2</a>
-                                <a href="project3.html">Project 3</a>
+                            <a href="/projects.html">Projects</a>
+                            <nav class="hidden">
+                                <ul>
+                                    <li>
+                                        <a href="project1.html">Project 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="project2.html">Project 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="project3.html">Project 3</a>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                     </li>
@@ -69,7 +77,7 @@
                     <article class="bio">
                         <h2>Honghao Lin</h2>
                         <p>
-                            Hi! I’m a computer science and Statistics student currently pursuing my double major degree at the University of California, 
+                            Hi! I'm a computer science and Statistics student currently pursuing my double major degree at the University of California, 
                             San Diego, set to graduate in 2024. Recently, I am a Student Researcher in UCSD studying SQL queries with Hormomorphic Encryption 
                             under efficient time constraint with GPU Programming in CUDA C. In summer 2023, I interned at Civic Helicopters Inc., 
                             analyzing aircraft data and developing flight schedules for the purpose of optimizing helicopter maintenance workload and aircraft uptimes. 
@@ -164,14 +172,14 @@
                         </mrow>
                     </math>
                     <pre>
-                    Disadvantage of MathML:
-                    Support was added in Chrome 24, but temporarily removed afterwards due to instability.
-                        1. Before version 4, Firefox only supports the XHTML notation
-                        2. Before version 10, Safari had issues rendering significant portions of the MathML torture test
-                        3. Can be enabled via the #enable-experimental-web-platform-features flag in chrome://flags
-                        4. Browsers based on Chromium 109+ specifically support MathML Core. While there is significant 
-                                support overlap with other MathML implementations there are some differences (see details).
-                        5. Opera's support is limited to a CSS profile of MathML
+    Disadvantage of MathML:
+    Support was added in Chrome 24, but temporarily removed afterwards due to instability.
+        1. Before version 4, Firefox only supports the XHTML notation
+        2. Before version 10, Safari had issues rendering significant portions of the MathML torture test
+        3. Can be enabled via the #enable-experimental-web-platform-features flag in chrome://flags
+        4. Browsers based on Chromium 109+ specifically support MathML Core. While there is significant 
+                support overlap with other MathML implementations there are some differences (see details).
+        5. Opera's support is limited to a CSS profile of MathML
                     </pre>
                 </aside>
             </main>
