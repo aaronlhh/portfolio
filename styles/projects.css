@@ -3,7 +3,7 @@
 
 main div {
     background-color: rgba(0, 0, 0, 0.046);
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 50px;
 }
 
@@ -42,6 +42,11 @@ table a {
 
 
 @media screen and (max-width: 600px) {
+    main div {
+        background-color: rgba(0, 0, 0, 0.046);
+        height: 80vh;
+        margin-bottom: 50px;
+    }
     table a {
         border: 1px solid black;
         padding: 10px 10%;

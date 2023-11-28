@@ -125,6 +125,32 @@ main {
     max-width: 1280px;
 }
 
+fieldset { 
+    margin: 0 auto; /* center the fieldset horizontally */ 
+    padding: 1em; /* add some padding around the fieldset */ 
+    text-align: center;
+    font-size: 1em;
+} 
+
+fieldset > input{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+fieldset > textarea {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+form button {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+legend { 
+    padding: 0.5em; /* add some padding around the legend */ 
+} 
+
 
 /* footer css */
 footer {

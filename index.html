@@ -102,40 +102,23 @@
                 <br>
                 <details>
                     <summary>Contact Form</summary>
-                    <form>
+                    <form action="https://httpbin.org" method="post">
                         <fieldset>
                             <legend>Contact Form</legend>
-                            <label>What is your purpose?:</label>
-                            <input type="radio" id="Recruit" name="purpose">
-                            <label for="Recruit">Recruit</label>
-                            <input type="radio" id="connect" name="purpose">
-                            <label for="connect">Connect</label>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                            <!-- <textarea name="name" id="name" cols="30" rows="1" placeholder="Enter Your Name Here..."></textarea> -->
                             <br>
-                            <label for="country">Select your country:</label>
-                            <select id="country">
-                                <optgroup label="North America">
-                                    <option value="canada">Canada</option>
-                                    <option value="us">US</option>
-                                    <option value="mexico">Mexico</option>
-                                </optgroup>
-                                <optgroup label="Asia">
-                                    <option value="russia">Russia</option>
-                                    <option value="china">China</option>
-                                </optgroup>
-                            </select>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
                             <br>
-                            <label for="continent">Select your continent:</label>
-                            <datalist id="continents">
-                                <option value="Africa"></option>
-                                <option value="North America"></option>
-                                <option value="South America"></option>
-                            </datalist>
-                            <input list="continents" id="continent">
+                            <label for="message">Messages:</label>
                             <br>
-                            <label for="sample-text-area">Add any comments:</label>
-                            <textarea id="sample-text-area">Your comment here...</textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" 
+                                    placeholder=" Enter your messages here..."></textarea>
                             <br>
-                            <button type="submit">Save</button>
+                            <input type="hidden" name="possible_bot" value="true">
+                            <button type="submit">Submit</button>
                         </fieldset>
                     </form>
                 </details>
