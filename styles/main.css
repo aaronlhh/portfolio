@@ -140,7 +140,6 @@ fieldset > input{
 
 fieldset > textarea {
     font-size: 1.2em;
-    margin-bottom: 0.5em;
     padding-left: 0.5em;
     padding-top: 0.5em;
 }
@@ -153,6 +152,17 @@ form button {
 legend { 
     padding: 0.5em; /* add some padding around the legend */ 
 } 
+
+form .form-messages {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+form .form-messages output {
+    font-size: 1.5em;
+    line-height: 2em;
+}
 
 
 /* footer css */
