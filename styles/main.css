@@ -140,6 +140,8 @@ fieldset > input{
 fieldset > textarea {
     font-size: 1.2em;
     margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
 }
 
 form button {
