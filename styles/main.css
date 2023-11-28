@@ -135,6 +135,7 @@ fieldset {
 fieldset > input{
     margin-bottom: 1em;
     font-size: 1.2em;
+    padding-left: 0.2em;
 }
 
 fieldset > textarea {
