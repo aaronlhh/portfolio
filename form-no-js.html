@@ -1,4 +1,4 @@
-<form action="https://httpbin.org/post" method="post">
+<form action="https://httpbin.org/post" method="post" id="contact-form">
     <fieldset>
         <legend>Contact Form</legend>
         <label for="name">Name:</label>
@@ -9,13 +9,14 @@
         <br>
         <label for="comments">Messages:</label>
         <br>
-        <textarea name="comments" id="comments" cols="30" rows="10" 
+        <textarea name="comments" id="comments" cols="30" rows="5" 
                 placeholder="Enter your messages here..." 
-                maxlength="200"  required></textarea>
+                minlength="0"
+                maxlength="100" required></textarea>
         <input type="hidden" name="possible_bot" value="true">
         <div class="form-messages">
-            <output name="error" id="error">error-message-if-any</output>
-            <output name="info" id="info">info-message-if-any</output>
+            <output name="info" id="info"></output>
+            <output name="error" id="error"></output>
         </div>
         <button type="submit">Submit</button>
     </fieldset>
