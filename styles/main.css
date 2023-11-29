@@ -141,7 +141,31 @@ fieldset > input{
 fieldset > textarea {
     font-size: 1.2em;
     padding-left: 0.5em;
+    padding-right: 0.2em;
     padding-top: 0.5em;
+    background-color: white;
+}
+
+fieldset > textarea.invalid{
+    animation-name: error-background;
+    animation-duration: 1s;
+}
+
+@keyframes error-background {
+    from {background-color: orange;}
+    to {background-color: white;}
+}
+
+output#error.invalid {
+    animation-name: error-message;
+    animation-duration: 4s;
+    display: none;
+}
+
+@keyframes error-message {
+    from {display: block;
+        color: red;}
+    to {color: white;}
 }
 
 form button {

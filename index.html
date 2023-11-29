@@ -8,7 +8,6 @@
       name="description"
       content="Portfolio of Honghao Lin, a student who is seeking Software Development Jobs">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/main.js"></script>
 	<title>Portfolio</title>
 </head>
 
@@ -102,23 +101,25 @@
                 <br>
                 <details>
                     <summary>Contact Form</summary>
-                    <form action="https://httpbin.org/post" method="post">
+                    <form action="https://httpbin.org/post" method="post" id="contact-form">
                         <fieldset>
                             <legend>Contact Form</legend>
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                             <br>
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                             <br>
                             <label for="comments">Messages:</label>
                             <br>
-                            <textarea name="comments" id="comments" cols="30" rows="10" 
-                                    placeholder="Enter your messages here..."></textarea>
+                            <textarea name="comments" id="comments" cols="30" rows="5" 
+                                    placeholder="Enter your messages here..." 
+                                    minlength="0"
+                                    maxlength="100" required></textarea>
                             <input type="hidden" name="possible_bot" value="true">
                             <div class="form-messages">
-                                <output name="error" id="error">error-message-if-any</output>
-                                <output name="info" id="info">info-message-if-any</output>
+                                <output name="info" id="info"></output>
+                                <output name="error" id="error"></output>
                             </div>
                             <button type="submit">Submit</button>
                         </fieldset>
@@ -183,5 +184,6 @@
         ctx.fillStyle = "#FF0000";
         ctx.fillRect(0, 0, 80, 80);
     </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
